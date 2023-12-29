@@ -2,6 +2,13 @@
 .focus {
     z-index: 10 !important;
 }
+button {
+    background-color: #d0d0d0;
+}
+.close-btn {
+    font-size: 10px;
+    font-weight: 600;
+}
 
 /* Main Stuff */
 #main-container {
@@ -16,6 +23,7 @@
     font-size: 64px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    user-select: none;
 }
 #os-text-2 {
     color: orange;
@@ -31,18 +39,22 @@
     z-index: 2;
 }
 .window-tab {
-    background-color: rgb(205, 205, 205);
+    background: linear-gradient(260deg, rgba(0,212,255,1) 20%, rgba(9,9,121,1) 90%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid black;
     z-index: 3;
+    color: white;
+    margin: 0.1em;
+}
+.window-content-wrapper {
+    border: 1px solid black;
 }
 .window-content {
     padding: 0.5em;
     height: 25vh;
     position: relative;
-    border: 1px solid black;
+    border: 2px solid #989FA2;
 }
 
 /* Icon Stuff */
@@ -59,8 +71,7 @@
     cursor: pointer;
     align-items: center;
     margin: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 0.5em 0.3em 0.5em 0.3em;
 }
 .icon-container.selected {
     background-color: royalblue;

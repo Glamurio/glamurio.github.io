@@ -6,10 +6,12 @@ $( document ).ready(function() {
         <span class="window-title"></span>
         <button class="close-btn">X</button>
     </div>
-    <div class="window-content">
+    <div class="window-content-wrapper">
+        <div class="window-content">
+        </div>
     </div>
     `
-    $('.icon-wrapper').on('click', function(event) {
+    $('.icon-wrapper').on('dblclick', function(event) {
         let windowContainer = document.createElement("div");
         windowContainer.classList = 'window-container'
         windowContainer.innerHTML = windowTemplate
