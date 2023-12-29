@@ -11,9 +11,17 @@ button {
 }
 
 /* Main Stuff */
+body {
+    margin: 0;
+    background-color: black;
+}
 #main-container {
     background: linear-gradient(163deg, rgba(0,212,255,1) 25%, rgba(9,9,121,1) 100%);
-    height: 95vh;
+    height: calc(100vh - 16px);
+    -webkit-box-shadow: inset 0px 0px 32px 4px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 32px 4px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 32px 4px rgba(0,0,0,1);
+    margin: 8px;
 }
 #os-wrapper {
     position: absolute;
@@ -46,6 +54,7 @@ button {
     z-index: 3;
     color: white;
     margin: 0.1em;
+    padding: 0 0 0 0.2em;
 }
 .window-content-wrapper {
     border: 1px solid black;
@@ -59,7 +68,6 @@ button {
 
 /* Icon Stuff */
 .icon-wrapper {
-    margin: 1em;
     padding: 0.1em;
     display: flex;
     width: fit-content;
