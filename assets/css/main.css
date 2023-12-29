@@ -1,0 +1,59 @@
+/* Utility Stuff */
+.focus {
+    z-index: 10 !important;
+}
+#main-container {
+    background-color: lightblue;
+    height: 100%;
+}
+
+/* Window Stuff */
+.window-container {
+    width: 50vw;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    background-color: blue;
+    z-index: 2;
+}
+.window-tab {
+    background-color: lightslategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    z-index: 3;
+}
+.window-content {
+    padding: 0.5em;
+    height: 25vh;
+    position: relative;
+    border: 1px solid black;
+}
+
+/* Icon Stuff */
+.icon-wrapper {
+    margin: 1em;
+    padding: 0.1em;
+    display: flex;
+    width: fit-content;
+}
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    margin: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.icon-container.selected {
+    background-color: royalblue;
+}
+.icon {
+    width: 30px;
+}
+.icon-text {
+    user-select: none;
+}
