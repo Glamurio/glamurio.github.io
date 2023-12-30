@@ -53,11 +53,51 @@ body {
 #os-text-2 {
     color: orange;
 }
+#task-bar {
+    position: fixed;
+    bottom: 9px;
+    left: 9px;
+    height: 40px;
+    width: calc(100% - 17px);
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px -5px 20px -5px rgba(0,0,0,1);
+    border-top: 1px solid darkgray;
+}
+#start-menu {
+    font-size: 32px;
+    display: flex;
+    padding: 0 0.5em 0 0.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+#start-menu:hover {
+    background-color: dodgerblue;
+}
+#start-text-1 {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+}
+#start-text-2 {
+    color: orange;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+#start-icon {
+    font-size: 24px;
+    margin-top: 1px;
+}
+
+/* Context Menu */
 #context-menu {
     background-color: #d0d0d0;
     position: absolute;
     border: 2px solid #989FA2;
     z-index: 5;
+    cursor: pointer;
 }
 #context-menu ul {
     margin: 0;
@@ -67,6 +107,9 @@ body {
     list-style: none;
     padding: 0.5em;
     border-bottom: 1px solid black;
+}
+#context-menu li:hover {
+    background-color: dodgerblue;
 }
 #context-menu li > * {
     color: black;

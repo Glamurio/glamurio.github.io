@@ -1,15 +1,15 @@
 $( document ).ready(function() {
 
     /* Context Menu */
-    $('#main-container').on('contextmenu', function(event) {
-        console.log('check')
-        event.preventDefault();
-        $('#context-menu').removeClass('hide')
-        $('#context-menu')[0].style.top = mouseY(event) + 'px';
-        $('#context-menu')[0].style.left = mouseX(event) + 'px';
+    // $('#main-container').on('contextmenu', function(event) {
+    //     console.log('check')
+    //     event.preventDefault();
+    //     $('#context-menu').removeClass('hide')
+    //     $('#context-menu')[0].style.top = mouseY(event) + 'px';
+    //     $('#context-menu')[0].style.left = mouseX(event) + 'px';
 
-        window.event.returnValue = false;
-    });
+    //     window.event.returnValue = false;
+    // });
 
     function mouseX(evt) {
         if (evt.pageX) {
